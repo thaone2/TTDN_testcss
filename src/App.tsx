@@ -1,18 +1,30 @@
 import InputHover from "./InputHover";
-import "@/loading.css";
+import InputHoverDA from "./InputHoverDA";
+import Loading from "./Loading";
+import LoadingDA from "./LoadingDA";
 function App() {
   return (
-    <div className="">
-      <div className="bg-gray-800 h-screen">
-        <div className="flex justify-center items-center p-36">
-          <InputHover />
+    <>
+      <div className="bg-gray-700 h-screen grid grid-cols-2">
+        <div className="m-20 p-2">
+          <div className="pt-20">
+            <InputHover />
+          </div>
+          <div className="pt-20">
+            <InputHoverDA />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2">
+          <div className=" pt-[300px] ">
+            <Loading />
+          </div>
+          <div className="pt-[200px]">
+            <LoadingDA />
+          </div>
         </div>
       </div>
-
-      <div className="flex mt-10 ringg w-40 h-40">
-        <div className="span1"></div>
-      </div>
-    </div>
+    </>
   );
 }
 
