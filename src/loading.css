@@ -9,13 +9,14 @@
   border-radius:50%;
   border: 6px  transparent;
   border-color: transparent;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(131, 37, 37, 0.333));
   
 }
 .ringg:before
 {
   content:'';
   position:absolute;
-  top:0px;
+  top:0;
   left:0px;
   width:100%;
   height:100%;
@@ -57,7 +58,7 @@
   border-radius:50%;
   background: pink;
   top:-8px;
-  right:-8px;
+  right:-4px;
   animation: ping 1s cubic-bezier(1, 1, 1, 1) infinite;
 }
 .span1:after
@@ -90,7 +91,7 @@
 {
   0%
   {
-    transform:rotate(60deg);
+    transform:rotate(62deg);
     filter: hue-rotate(360deg);
     
   }
@@ -103,7 +104,7 @@
 
 @keyframes ping {
   75%, 100% {
-    transform: scale(1.05);
+    transform: scale(1.5);
     opacity: 1;
   }
 }

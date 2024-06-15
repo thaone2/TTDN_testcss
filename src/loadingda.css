@@ -5,7 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, #0005);
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, #0005); 
+    /* Tạo bóng đỗ hiệu ứng mặt nước */
   }
   
   .container .loader {
